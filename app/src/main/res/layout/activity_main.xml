@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:layout_margin="1dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/frase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="clip_horizontal"
+            android:textSize="18sp"
+            android:text="Escriba una frse:" />
+
+        <EditText
+            android:id="@+id/TextFrase"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:ems="10"
+            android:hint=""
+            android:inputType="textPersonName"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_margin="1dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/Int"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Archivo Memoria INTERNA" />
+
+        <RadioButton
+            android:id="@+id/SD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Archivo Memoria SD" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_margin="1dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Narchivo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Nombre Del Archivo: " />
+
+        <EditText
+            android:id="@+id/TextArchivo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="archivo.txt" />
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/BtnGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="guardar" />
+
+        <Button
+            android:id="@+id/BtnAbrir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="abrir" />
+    </TableRow>
+
+
+</LinearLayout>
